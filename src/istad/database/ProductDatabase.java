@@ -15,6 +15,7 @@ public class ProductDatabase {
         products.add(new Product(2L, "CoCa ", 300, 40.00 , LocalDate.now()));
         products.add(new Product(3L, "Cambodia ", 200, 50.00 , LocalDate.now()));
         products.add(new Product(4L, "Prime ", 400, 110.00 , LocalDate.now()));
+        products.add(new Product(4L, "Spring ", 400, 140.00 , LocalDate.now()));
     }
     public List<Product> getProducts(){
         return products;

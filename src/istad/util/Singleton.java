@@ -16,7 +16,7 @@ public class Singleton {
     //Create instance of Scanner
     public  static Scanner scanner(){
         if (scanner == null){
-            scanner= new Scanner(System.in);
+           scanner = new Scanner(System.in);
         }
         return scanner;
     }

@@ -8,10 +8,18 @@ import java.util.List;
 
 public class ProductController {
     private final ProductService productService;
-    public ProductController(){
+    ProductServiceImpl productServiceImpl;
+
+        public ProductController(){
 
         productService = new ProductServiceImpl();
     }
+
+        public ProductController(ProductService productService) {
+
+        this.productService = productService;
+    }
+
     public void index(){
       List<Product> products = productService.select();
       ProductView.printProductList(products);

@@ -1,5 +1,4 @@
 package istad;
-
 import istad.controller.MenuController;
 import istad.controller.ProductController;
 import istad.dao.ProductDao;
@@ -9,7 +8,6 @@ import istad.service.ProductServiceImpl;
 import istad.util.Singleton;
 import istad.view.MenuView;
 import istad.view.ProductView;
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,11 +26,12 @@ public class MainApplication {
         int option = Integer.parseInt(scanner.nextLine());
         switch (option){
             case 1 ->  productController.index();
-            default -> throw  new IllegalStateException();
+            default -> throw new IllegalStateException();
         }
     }
     public static void main(String[] args) {
-          new MainApplication().run();
+       new MainApplication().run();
+
     }
 
 }

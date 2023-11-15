@@ -15,4 +15,6 @@ public interface ProductService {
         Product  deletedById(Long id);
         List<Product>  selectByName(String name);
 
+
+
 }
